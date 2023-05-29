@@ -1,11 +1,12 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, StatusBar } from 'react-native';
 
 import Title from './src/components/Title';
 import Form from './src/components/Form';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
+      <StatusBar />
       <Title />
       <Form />
     </View>
@@ -15,8 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#e0e5e5',
   },
 });
+
+export default App;
